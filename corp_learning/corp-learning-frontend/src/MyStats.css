@@ -1,0 +1,17 @@
+.mystats-container {
+  padding: 20px;
+}
+
+.stats-details {
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 1.1rem;
+  /* Remove background, border, and box-shadow for a plain look */
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.stats-details p {
+  margin: 10px 0;
+}
