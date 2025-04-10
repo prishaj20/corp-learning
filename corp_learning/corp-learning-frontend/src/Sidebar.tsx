@@ -4,7 +4,6 @@ import {FaChartLine, FaHome} from 'react-icons/fa';
 import './Sidebar.css';
 
 const Sidebar: React.FC = () => {
-  // Cast FaHome to a React functional component.
   const HomeIcon: React.FC<any> = FaHome as React.FC<any>;
   const ChartLine: React.FC<any> = FaChartLine as React.FC<any>;
 

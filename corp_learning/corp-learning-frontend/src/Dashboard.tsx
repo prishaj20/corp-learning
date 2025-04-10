@@ -14,7 +14,6 @@ export interface TrainingModule {
   title: string;
   content: string;
   difficulty: number;
-  // You might eventually add a "completed" property or other fields
 }
 
 export interface Gamification {
@@ -66,14 +65,6 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
   return (
     <div>
       <h1>Welcome, {user.username}</h1>
-
-      {gamification && (
-        <div className="gamification-stats">
-          <h2>Gamification Stats</h2>
-          <p>Points: {gamification.points}</p>
-          <p>Badges: {gamification.badges.join(', ')}</p>
-        </div>
-      )}
 
       <div className="modules-grid">
         {modules.map((module) => (

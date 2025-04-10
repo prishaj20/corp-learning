@@ -22,8 +22,8 @@ const Login: React.FC<LoginProps> = ({ setUser }) => {
     const response = await axios.post(
       "http://127.0.0.1:8000/api/login/",
       {
-        username: username, // your state variable for username
-        password: password, // your state variable for password
+        username: username,
+        password: password,
       },
       {
         withCredentials: true,

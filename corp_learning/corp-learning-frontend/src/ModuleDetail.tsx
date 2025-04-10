@@ -72,7 +72,7 @@ const ModuleDetail: React.FC = () => {
     setShowQuiz(false);
     try {
       await axios.post("http://127.0.0.1:8000/api/update-quiz/", {
-        pointsEarned: score * 10, // Example: 10 points per correct answer
+        pointsEarned: score * 10,
         timeTaken: timeTaken,
       }, { withCredentials: true });
     } catch (error) {
@@ -92,7 +92,6 @@ const ModuleDetail: React.FC = () => {
 const ArrowLeft: React.FC<any> = FaArrowLeft as React.FC<any>;
   return (
     <div style={{ padding: '20px' }}>
-      {/* Back arrow button replacing the text button */}
       <button className="back-button" onClick={() => navigate(-1)}>
         <ArrowLeft size={20} />
       </button>
