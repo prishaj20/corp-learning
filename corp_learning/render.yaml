@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: corp-learning
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn corp_learning.wsgi:application
+    plan: free
